@@ -22,3 +22,21 @@ const sendEmail = (e) =>{
     });
 }
 contactForm.addEventListener('submit', sendEmail);
+
+
+// scroll reveal animation
+const sr = ScrollReveal({
+    origin:'top',
+    distance:'60px',
+    duration: 2500,
+    delay: 400,
+    // reset: true, // animation repeat
+})
+
+sr.reveal(`.home_1, .form_contact`)
+sr.reveal(`.home_2`, {origin:'left', delay:800})
+sr.reveal(`.home_info`, {origin:'right', delay:1000})
+sr.reveal(`.home_skill`, {origin:'left', delay:1200})
+sr.reveal(`.project, .certificate`, {interval:100})
+
+
